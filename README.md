@@ -6,3 +6,4 @@
 
 ## Getting started
 - `npm install` — installs app dependencies.
+ 
