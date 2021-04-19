@@ -70,6 +70,7 @@ header p{
   border-radius: 50px;
   border: #348aff 1px;
   width: 20px;
+  text-align: center;
 }
 form{
   margin: 30px;
