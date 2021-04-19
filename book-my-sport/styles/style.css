@@ -58,7 +58,18 @@ header p{
   }
 }
 .etapes{
-  /*margin-top: 200px;*/
+  margin-top: 200px!important;
+  display: flex!important;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+.etape{
+  background-color: #a143ff;
+  padding: 20px;
+  border-radius: 50px;
+  border: 1px #348aff;
+  width: 20px;
 }
 form{
   margin: 30px;
