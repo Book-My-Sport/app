@@ -58,8 +58,8 @@ header p{
   }
 }
 .allstep{
-  margin-top: 200px!important;
-  display: flex!important;
+  margin-top: 200px;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   width: 50%;
