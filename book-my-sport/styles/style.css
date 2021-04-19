@@ -57,18 +57,18 @@ header p{
     }
   }
 }
-.etapes{
+.allstep{
   margin-top: 200px!important;
   display: flex!important;
   justify-content: space-between;
   align-items: center;
   width: 50%;
 }
-.etape{
+.onestep{
   background-color: #a143ff;
   padding: 20px;
   border-radius: 50px;
-  border: 1px #348aff;
+  border: #348aff 1px;
   width: 20px;
 }
 form{
