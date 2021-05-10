@@ -7,6 +7,8 @@ import MapGL, {Source, Layer} from 'react-map-gl';
 import ControlPanel from './control-panel';
 import {clusterLayer, clusterCountLayer, unclusteredPointLayer} from './layers';
 
+// import geojson_data from '../json/localisation-des-equipements-sportifs-a-roubaix.geojson';
+
 const MAPBOX_TOKEN = 'pk.eyJ1IjoiYm9vay1teS1zcG9ydCIsImEiOiJja25vOWxpcDExOXk1MnVwZXl3c24zNHZzIn0.Z0l7ZiXiaxJGYpNcwGF-Vw'; // Set your mapbox token here
 
 class Map extends Component {
@@ -24,26 +26,27 @@ class Map extends Component {
 
   _onViewportChange = viewport => this.setState({viewport});
 
-//   _onClick = event => {
-//     const feature = event.features[0];
-//     const clusterId = feature.properties.cluster_id;
+  _onClick = event => {
+    const feature = event.features[0];
+    const clusterId = feature.properties.cluster_id;
 
-//     const mapboxSource = this._sourceRef.current.getSource();
+    const mapboxSource = this._sourceRef.current.getSource();
+    // const mapboxSource = 'https://api.jsonbin.io/b/6098dd0f6e36c66e535ebf33';
 
-//     mapboxSource.getClusterExpansionZoom(clusterId, (err, zoom) => {
-//       if (err) {
-//         return;
-//       }
+    mapboxSource.getClusterExpansionZoom(clusterId, (err, zoom) => {
+      if (err) {
+        return;
+      }
 
-//       this._onViewportChange({
-//         ...this.state.viewport,
-//         longitude: feature.geometry.coordinates[0],
-//         latitude: feature.geometry.coordinates[1],
-//         zoom,
-//         transitionDuration: 500
-//       });
-//     });
-//   };
+      this._onViewportChange({
+        ...this.state.viewport,
+        longitude: feature.geometry.coordinates[0],
+        latitude: feature.geometry.coordinates[1],
+        zoom,
+        transitionDuration: 500
+      });
+    });
+  };
 
   render() {
     return (
@@ -64,7 +67,9 @@ class Map extends Component {
       >
         <Source
           type="geojson"
-          data="https://docs.mapbox.com/mapbox-gl-js/assets/earthquakes.geojson"
+          // data="https://docs.mapbox.com/mapbox-gl-js/assets/earthquakes.geojson"
+          // data="../json/localisation-des-equipements-sportifs-a-roubaix.geojson"
+          data="https://api.jsonbin.io/b/6098dd0f6e36c66e535ebf33"
           cluster={true}
           clusterMaxZoom={14}
           clusterRadius={50}
