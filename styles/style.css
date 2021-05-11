@@ -3,6 +3,10 @@ html, body{
   font-family: Avenir;
   box-sizing: border-box;
 }
+a{
+  text-decoration: none;
+  color: white;
+}
 header{
   z-index: 10;
   position: fixed;
@@ -57,13 +61,15 @@ header p{
   }
 
 .allstep{
-  margin-top: 200px;
+  margin-left: 50%;
+  transform: translateX(-50%);
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 50%;
 }
 .onestep{
+  margin-top: 200px;
   background-color: #a143ff;
   padding: 20px;
   border-radius: 50px;
