@@ -19,25 +19,25 @@ export default function Home() {
         <Steps />
 
       <form action="" method="post">
-        <div class="deux nom_prenom">
+        <div className="deux nom_prenom">
           <label>Nom :
             <input type="text" name="nom" id=""></input></label>
           <label>Prénom :
             <input type="text" name="prenom" id=""></input></label>
         </div>
-        <div class="deux mail_tel">
+        <div className="deux mail_tel">
           <label>E-mail :
             <input type="email" name="mail" id=""></input></label>
           <label>téléphone :
             <input type="tel" name="tel" id=""></input></label>
         </div>
-        <div class="deux adresse">
+        <div className="deux adresse">
           <label>Adresse :
-            <input type="text" name="adresse" id="" class="full"></input></label>
+            <input type="text" name="adresse" id="" className="full"></input></label>
           <label>Complément d'adresse :
-            <input type="text" name="adressecomplement" id="" class="full"></input></label>
+            <input type="text" name="adressecomplement" id="" className="full"></input></label>
         </div>
-        <div class="deux cp_ville">
+        <div className="deux cp_ville">
           <label>Code postal :
             <input type="number" name="codepostal" min="00000" max="99999"id=""></input></label>
           <label>Ville :
