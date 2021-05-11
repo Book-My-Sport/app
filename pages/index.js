@@ -43,7 +43,7 @@ export default function Home() {
           <label>Ville :
             <input type="text" name="ville" id=""></input></label>
         </div>
-        <button><a href="https://book-my-sport.netlify.app/carte.html">ENVOYER</a></button>
+        <button><a href="/step-2">Continuer</a></button>
       </form>
     </main>
 

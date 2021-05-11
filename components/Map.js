@@ -14,8 +14,8 @@ const MAPBOX_TOKEN = 'pk.eyJ1IjoiYm9vay1teS1zcG9ydCIsImEiOiJja25vOWxpcDExOXk1MnV
 class Map extends Component {
   state = {
     viewport: {
-      width: '100vw',
-      height: '100vh',
+      width: '100%',
+      height: '500px',
       latitude: 50.6965038397,
       longitude: 3.15838315346,
       zoom: 10
