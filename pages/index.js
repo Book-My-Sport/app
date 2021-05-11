@@ -7,9 +7,47 @@
 // export default () => <DynamicComponentWithNoSSR />;
 
 import Header from '../components/Header'
+import Steps from '../components/Steps'
 
 export default function Home() {
   return (
-    <Header />
+
+    <>
+      <Header />
+
+      <main>
+        <Steps />
+
+      <form action="" method="post">
+        <div class="deux nom_prenom">
+          <label>Nom :
+            <input type="text" name="nom" id=""></input></label>
+          <label>Prénom :
+            <input type="text" name="prenom" id=""></input></label>
+        </div>
+        <div class="deux mail_tel">
+          <label>E-mail :
+            <input type="email" name="mail" id=""></input></label>
+          <label>téléphone :
+            <input type="tel" name="tel" id=""></input></label>
+        </div>
+        <div class="deux adresse">
+          <label>Adresse :
+            <input type="text" name="adresse" id="" class="full"></input></label>
+          <label>Complément d'adresse :
+            <input type="text" name="adressecomplement" id="" class="full"></input></label>
+        </div>
+        <div class="deux cp_ville">
+          <label>Code postal :
+            <input type="number" name="codepostal" min="00000" max="99999"id=""></input></label>
+          <label>Ville :
+            <input type="text" name="ville" id=""></input></label>
+        </div>
+        <button><a href="https://book-my-sport.netlify.app/carte.html">ENVOYER</a></button>
+      </form>
+    </main>
+
+    </>
+
   )
 }
