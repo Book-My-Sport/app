@@ -72,6 +72,9 @@ header p{
   width: 20px;
   text-align: center;
 }
+.avtivestep{
+  background-color: #348aff;
+}
 form{
   margin: 30px;
   background-color: #3489ff50;
