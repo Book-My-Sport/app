@@ -14,11 +14,6 @@ const Steps = () => {
             </div>
 
             <div>
-                <div className="onestep">3</div>
-                <div>Réservation</div>
-            </div>
-
-            <div>
                 <div className="onestep">4</div>
                 <div>Réserver</div>
             </div>
