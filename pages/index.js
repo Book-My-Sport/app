@@ -45,7 +45,7 @@ export default function Home() {
         </div>
         <button><a href="/step-2">Continuer</a></button>
       </form>
-    </main>
+      </main>
 
     </>
 
