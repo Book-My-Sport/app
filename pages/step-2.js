@@ -19,15 +19,24 @@ export default function Home() {
       <form action="" method="post">
         <div className="deux">
           <label>Date :
-            <input type="date" name="date" id=""></input></label>
+            <input type="date" name="date" id=""></input>
+          </label>
           <label>Heure :
-            <input type="time" name="heure" id=""></input></label>
+            <input type="time" name="heure" id=""></input>
+          </label>
+          <label>distance maximum (km) :
+            <input type="number" name="distance" id=""></input>
+          </label>
         </div>
-      
+
         <DynamicComponentWithNoSSR />
 
-        <button><a href="/">Retour</a></button>
-        <button><a href="#">Continuer</a></button>
+        <button className="retour"><a href="/">Retour</a></button>
+        <button className="continuer" {
+          constructor() {
+
+          }
+        }><a href="/step-3.js">Continuer</a></button>
       </form>
     </main>
 

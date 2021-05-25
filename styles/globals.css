@@ -6,6 +6,7 @@ html, body{
 a{
   color: white;
   text-decoration: none;
+  text-transform: uppercase;
 }
 header{
   z-index: 10;
@@ -120,4 +121,15 @@ button{
   border: none;
   border-radius: 10px;
   box-shadow: 5px 5px 20px 0px rgba(119,129,189,0.75);
+}
+.continuer{
+  margin-right: 20%;
+}
+.retour{
+  margin-left: 20%;
+  color: #000000;
+  background-image: linear-gradient(to right bottom, #C5AEE9, #88CCFF);
+}
+.retour:hover{
+  background-image: linear-gradient(to right bottom, #a143ff, #348aff);
 }
