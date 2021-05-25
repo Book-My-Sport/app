@@ -6,6 +6,7 @@ const DynamicComponentWithNoSSR = dynamic(() => import('../components/Map'), {
 
 import Header from '../components/Header'
 import Steps from '../components/Steps'
+import Testmap from '../components/Testmap'
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
         </div>
 
         <DynamicComponentWithNoSSR />
+        <Testmap />
 
         <button className="retour"><a href="/">Retour</a></button>
         <button className="continuer" {
