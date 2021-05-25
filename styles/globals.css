@@ -3,6 +3,10 @@ html, body{
   font-family: Avenir;
   box-sizing: border-box;
 }
+a{
+  color: white;
+  text-decoration: none;
+}
 header{
   z-index: 10;
   position: fixed;
