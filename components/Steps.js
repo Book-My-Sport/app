@@ -18,15 +18,6 @@ const Steps = () => {
                 <div>Réservation</div>
             </div>
 
-            <div>
-                <div className="onestep">4</div>
-                <div>Formulaire</div>
-            </div>
-
-            <div>
-                <div className="onestep">5</div>
-                <div>Formulaire</div>
-            </div>
         </div>
     )
 }
