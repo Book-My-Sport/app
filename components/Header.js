@@ -5,14 +5,14 @@ const Header = () => {
     return (
         <header>
             <a href="/">
-                <Image
+                <img
                     src="/images/logo.svg"
                     alt="logo Book My Sport"
                     width={50}
                     height={50}
                 />
             </a>
-                
+
             <a href="/">
                 <p>Book My Sport</p>
             </a>
