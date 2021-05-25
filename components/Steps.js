@@ -5,17 +5,17 @@ const Steps = () => {
         <div className="allstep">
             <div>
                 <div className="onestep onestep_active">1</div>
-                <div>Formulaire</div>
+                <div>Inscription</div>
             </div>
 
             <div>
                 <div className="onestep">2</div>
-                <div>Formulaire</div>
+                <div>Choix de la salle</div>
             </div>
 
             <div>
                 <div className="onestep">3</div>
-                <div>Formulaire</div>
+                <div>Réservation</div>
             </div>
 
             <div>
@@ -32,4 +32,3 @@ const Steps = () => {
 }
 
 export default Steps;
-
