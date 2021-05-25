@@ -18,6 +18,11 @@ const Steps = () => {
                 <div>Réservation</div>
             </div>
 
+            <div>
+                <div className="onestep">4</div>
+                <div>Réserver</div>
+            </div>
+
         </div>
     )
 }
