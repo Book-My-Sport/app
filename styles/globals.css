@@ -116,11 +116,20 @@ input{
 .troix{
 
 }
+
+#buttons {
+  text-align: center;
+  margin-top: 30px;
+}
+
+button:nth-child(2) {
+  margin-left: 25px;
+}
 button{
-  position: absolute;
-  top:30px;
+  /* position: absolute; */
+  /* top:30px; */
   /*margin-left: 50%;*/
-  transform: translateX(-50%);
+  /* transform: translateX(-50%); */
   padding: 10px 15px 10px 15px;
   color: #ffffff;
   background-image: linear-gradient(to right bottom, #a143ff, #348aff);
@@ -128,11 +137,11 @@ button{
   border-radius: 10px;
   box-shadow: 5px 5px 20px 0px rgba(119,129,189,0.75);
 }
-.continuer{
+/* .continuer{
   margin-right: 10%;
-}
+} */
 .retour{
-  margin-left: 10%;
+  /* margin-left: 10%; */
   color: #000000;
   background-image: linear-gradient(to right bottom, #C5AEE9, #88CCFF);
 }
