@@ -29,9 +29,7 @@ class Map extends Component {
   _onClick = event => {
     const feature = event.features[0];
     const clusterId = feature.properties.cluster_id;
-
-    const mapboxSource = this._sourceRef.current.getSource();
-    // const mapboxSource = 'https://api.jsonbin.io/b/6098dd0f6e36c66e535ebf33';
+    const mapboxSource = this._sourceRef.current.getMap().getSource('sport');
 
     mapboxSource.getClusterExpansionZoom(clusterId, (err, zoom) => {
       if (err) {
@@ -63,9 +61,11 @@ class Map extends Component {
         onViewportChange={(viewport) => this.setState({ viewport })}
         {...this.state.viewport}
         interactiveLayerIds={[clusterLayer.id]}
-        // onClick={this._onClick}
+        onClick={this._onClick}
+        ref={this._sourceRef}
       >
         <Source
+          id="sport"
           type="geojson"
           // data="https://docs.mapbox.com/mapbox-gl-js/assets/earthquakes.geojson"
           // data="../json/localisation-des-equipements-sportifs-a-roubaix.geojson"
@@ -73,7 +73,7 @@ class Map extends Component {
           cluster={true}
           clusterMaxZoom={14}
           clusterRadius={50}
-          ref={this._sourceRef}
+          
         >
           <Layer {...clusterLayer} />
           <Layer {...clusterCountLayer} />
