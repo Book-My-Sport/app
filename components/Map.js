@@ -24,8 +24,6 @@ class Map extends Component {
 
   _sourceRef = React.createRef();
 
-  _onViewportChange = viewport => this.setState({viewport});
-
   _onClick = event => {
     const feature = event.features[0];
     const clusterId = feature.properties.cluster_id;
@@ -48,19 +46,12 @@ class Map extends Component {
 
   render() {
     return (
-    //   <ReactMapGL
-    //     mapStyle="mapbox://styles/mapbox/streets-v9"
-    //     mapboxApiAccessToken="pk.eyJ1IjoiYm9vay1teS1zcG9ydCIsImEiOiJja25vOWxpcDExOXk1MnVwZXl3c24zNHZzIn0.Z0l7ZiXiaxJGYpNcwGF-Vw"
-    //     onViewportChange={(viewport) => this.setState({ viewport })}
-    //     {...this.state.viewport}
-    //   />
-
     <MapGL
         mapStyle="mapbox://styles/mapbox/streets-v9"
         mapboxApiAccessToken="pk.eyJ1IjoiYm9vay1teS1zcG9ydCIsImEiOiJja25vOWxpcDExOXk1MnVwZXl3c24zNHZzIn0.Z0l7ZiXiaxJGYpNcwGF-Vw"
         onViewportChange={(viewport) => this.setState({ viewport })}
         {...this.state.viewport}
-        interactiveLayerIds={[clusterLayer.id]}
+        interactiveLayerIds={[clusterLayer.id, unclusteredPointLayer.id]}
         onClick={this._onClick}
         ref={this._sourceRef}
       >
