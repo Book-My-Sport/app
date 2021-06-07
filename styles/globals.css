@@ -129,10 +129,10 @@ button{
   box-shadow: 5px 5px 20px 0px rgba(119,129,189,0.75);
 }
 .continuer{
-  margin-right: 20%;
+  margin-right: 10%;
 }
 .retour{
-  margin-left: 20%;
+  margin-left: 10%;
   color: #000000;
   background-image: linear-gradient(to right bottom, #C5AEE9, #88CCFF);
 }
