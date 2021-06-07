@@ -31,7 +31,9 @@ export default function Home() {
 
         <DynamicComponentWithNoSSR />
 
-        <button className="retour"><a href="/">Retour</a></button> <button className="continuer"><a href="step-3">Continuer</a></button>
+        <div id="buttons">
+          <button className="retour"><a href="/">Retour</a></button> <button className="continuer"><a href="/step-3">Continuer</a></button>
+        </div>
       </form>
     </main>
 

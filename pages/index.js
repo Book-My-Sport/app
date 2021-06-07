@@ -43,7 +43,11 @@ export default function Home() {
           <label>Ville :
             <input type="text" name="ville" id=""></input></label>
         </div>
-        <button><a href="/step-2">Continuer</a></button>
+
+        <div id="buttons">
+          <button className="continuer"><a href="/step-2">Continuer</a></button>
+        </div>
+
       </form>
       </main>
 
