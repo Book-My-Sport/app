@@ -17,7 +17,7 @@ export default function Home() {
         <Steps />
 
       <form action="" method="post">
-        <div className="deux">
+        <div className="deux trois">
           <label>Date :
             <input type="date" name="date" id=""></input>
           </label>
