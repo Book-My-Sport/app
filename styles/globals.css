@@ -113,9 +113,10 @@ input{
   margin: 10px 0;
 }
 .troix{
-  
+
 }
 button{
+  display: inline-block;
   margin-left: 50%;
   transform: translateX(-50%);
   padding: 10px 15px 10px 15px;
