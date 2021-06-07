@@ -137,3 +137,9 @@ button{
 .retour:hover{
   background-image: linear-gradient(to right bottom, #a143ff, #348aff);
 }
+.resa{
+  margin: 30px;
+  background-color: #3489ff50;
+  padding: 30px;
+  border-radius: 20px;
+}

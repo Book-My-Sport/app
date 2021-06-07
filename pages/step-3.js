@@ -16,7 +16,7 @@ export default function Home() {
       <main>
         <Steps />
 
-        <div className="deux trois">
+        <div className="resa">
           <h2>Bonjour<?php $_POST["nom"] $_POST["prenom"]?>, </h2>
           <h3>Vos informations personnelles :</h3>
           <p>E-mail : <?php $_POST["mail"]?><br>
