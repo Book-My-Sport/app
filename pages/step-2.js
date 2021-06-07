@@ -32,7 +32,7 @@ export default function Home() {
         <DynamicComponentWithNoSSR />
 
         <button className="retour"><a href="/">Retour</a></button>
-        <button className="continuer"><a href="step-3.js">Continuer</a></button>
+        <button className="continuer"><a href="step-3">Continuer</a></button>
       </form>
     </main>
 
